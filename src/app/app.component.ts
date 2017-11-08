@@ -13,4 +13,8 @@ export class AppComponent {
     console.log(token);
     return token ? true : false;
   }
+
+  getName() {
+    return localStorage.getItem('name');
+  }
 }

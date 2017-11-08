@@ -1,7 +1,7 @@
 <app-auth-fake></app-auth-fake>
 <nav>
   <a routerLink="/public">Public</a>
-  <a routerLink="/private" *ngIf="getIsSigedIn()">Private</a>
+  <a routerLink="/private" *ngIf="getIsSigedIn()">{{ getName() }}</a>
   <a routerLink="/signin" *ngIf="!getIsSigedIn()">Sign in</a>
   <a routerLink="/about">About</a>
 </nav>

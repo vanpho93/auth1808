@@ -1,3 +1,17 @@
-<p>
-  signin works!
-</p>
+<form (ngSubmit)="onSignIn(formSignIn);" #formSignIn="ngForm">
+  <input
+      placeholder="Email"
+      ngModel
+      #txtEmail="ngModel"
+      name="email"
+  >
+  <br><br>
+  <input
+      type="password"
+      placeholder="Password"
+      ngModel
+      #txtPassword="ngModel"
+      name="password"
+  >
+  <button>Sign In</button>
+</form>
