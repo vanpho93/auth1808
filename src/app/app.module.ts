@@ -6,6 +6,7 @@ import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
 import { AuthGuard } from './auth.guard';
 import { AboutComponent } from './about/about.component';
+import { AuthFakeComponent } from './auth-fake/auth-fake.component';
 
 const routerConfig: Routes = [
   { path: 'public', component: PublicComponent },
@@ -18,7 +19,8 @@ const routerConfig: Routes = [
     AppComponent,
     PublicComponent,
     PrivateComponent,
-    AboutComponent
+    AboutComponent,
+    AuthFakeComponent
   ],
   imports: [
     BrowserModule,
