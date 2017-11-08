@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  getIsSigedIn() {
+    const token = localStorage.getItem('token');
+    console.log(token);
+    return token ? true : false;
+  }
 }
